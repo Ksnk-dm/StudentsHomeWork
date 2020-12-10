@@ -12,6 +12,7 @@ public class StudNameSort implements Comparator<Student> {
 		String name2 = st2.getName();
 
 		if (name1.compareTo(name2) > 0) {
+			
 			return 1;
 		}
 		if (name1.compareTo(name2) < 0) {
