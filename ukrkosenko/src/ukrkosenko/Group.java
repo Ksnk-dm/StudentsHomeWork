@@ -71,7 +71,7 @@ public class Group implements Voencom, Serializable {
 			throw new MyException();
 		}
 		stud.add(st);
-		System.out.println("студент " + st + " добавлен");
+		System.out.println("РЎС‚СѓРґРµРЅС‚ " + st + " Р”РѕР±Р°РІР»РµРЅ");
 		Interface.menu();
 
 	}
@@ -82,7 +82,7 @@ public class Group implements Voencom, Serializable {
 
 			if (stud.get(i).getId() == id) {
 				stud.remove(i);
-				System.out.println("студент " + id + " отчислен");
+				System.out.println("РЎС‚СѓРґРµРЅС‚  " + id + " СѓРґР°Р»РµРЅ");
 
 			}
 
@@ -133,9 +133,7 @@ public class Group implements Voencom, Serializable {
 	}
 
 	/*
-	 * menu() Максимально ужасная конструкция которая не соответсвует стандартнам
-	 * оформления кода, что-то даже идей нет как её разбить был бы благодарен за
-	 * идею :)
+	 * menu() СѓР¶Р°СЃРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС†РёСЏ РєРѕС‚РѕСЂР°СЏ РЅРµ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚ РїСЂР°РІРёР»Р°Рј РѕС„РѕСЂРјР»РµРЅРёСЏ РєРѕРґР°
 	 */
 
 	public void menu() {
@@ -177,13 +175,13 @@ public class Group implements Voencom, Serializable {
 					continue;
 				}
 				if (number == 6) {
-					System.out.println("Сохранение в файл");
+					System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ");
 					writeFile();
 					number = scan.nextInt();
 					continue;
 				}
 				if (number == 7) {
-					System.out.println("Считать с файла");
+					System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ");
 					File file = new File("group.csv");
 					stud = readFile(file, ":");
 					number = scan.nextInt();
@@ -272,7 +270,7 @@ public class Group implements Voencom, Serializable {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				System.out.println("Информацию считано используйте [2] для просмотра всех студентов");
+				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ [2] пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 
 			}
 
