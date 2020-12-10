@@ -175,13 +175,13 @@ public class Group implements Voencom, Serializable {
 					continue;
 				}
 				if (number == 6) {
-					System.out.println("���������� � ����");
+					System.out.println("Группа сохранена");
 					writeFile();
 					number = scan.nextInt();
 					continue;
 				}
 				if (number == 7) {
-					System.out.println("������� � �����");
+					System.out.println("Группа считана");
 					File file = new File("group.csv");
 					stud = readFile(file, ":");
 					number = scan.nextInt();
@@ -270,7 +270,7 @@ public class Group implements Voencom, Serializable {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				System.out.println("���������� ������� ����������� [2] ��� ��������� ���� ���������");
+				System.out.println("Файл считан используйте [2]  для просмотра группы");
 
 			}
 

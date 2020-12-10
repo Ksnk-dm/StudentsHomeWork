@@ -8,14 +8,14 @@ public class Interface {
 	public static Group group = new Group();
 
 	public static void name(Student st) {
-		System.out.println("Введите имя: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ: ");
 		String string = in.nextLine();
 
 		st.setName(string);
 	}
 
 	public static void surname(Student st) {
-		System.out.println("Введите фамилию: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ С„Р°РјРёР»РёСЋ: ");
 		String string = in.nextLine();
 		st.setSurname(string);
 	}
@@ -23,32 +23,32 @@ public class Interface {
 	public static void age(Student st) {
 
 		do {
-			System.out.println("Введите возраст");
+			System.out.println("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚: ");
 			String string = in.nextLine();
 
 			try {
 				st.setYears(Integer.valueOf(string));
 			} catch (NumberFormatException e) {
-				System.err.println("возраст должен быть числом");
+				System.err.println("Р’РѕР·СЂР°СЃС‚ СЌС‚Рѕ С‡РёСЃР»Рѕ");
 			}
 		} while (st.getYears() == 0);
 	}
 
 	public static void gender(Student st) {
 		do {
-			System.out.println("Введите пол (MAN\\WOMAN)");
+			System.out.println("Р’РІРµРґРёС‚Рµ РїРѕР» (MAN\\WOMAN)");
 			String string = in.nextLine();
 
 			try {
 				st.setGender(Gender.valueOf(string));
 			} catch (IllegalArgumentException e) {
-				System.err.println("пол не найден");
+				System.err.println("РЅРµ РЅР°Р№РґРµРЅРѕ");
 			}
 		} while (st.getGender() == null);
 	}
 
 	public static void faculty(Student st) {
-		System.out.println("Введите название факультета ");
+		System.out.println("Р’РІРµРґРёС‚Рµ С„Р°РєСѓР»СЊС‚РµС‚ ");
 		String string = in.nextLine();
 		st.setFaculty(string);
 	}
@@ -56,13 +56,13 @@ public class Interface {
 	public static void id(Student st) {
 
 		do {
-			System.out.println("Введите номер студ. билета ");
+			System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ СЃС‚СѓРґ Р±РёР»РµС‚Р°: ");
 			String string = in.nextLine();
 			try {
 				st.setId(Integer.valueOf(string));
 
 			} catch (NumberFormatException e) {
-				System.err.println("должно быть число");
+				System.err.println("РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С‡РёСЃР»Рѕ");
 			}
 		} while (st.getId() == 0);
 	}
@@ -70,21 +70,21 @@ public class Interface {
 	public static void numberGroup(Student st) {
 
 		do {
-			System.out.println("Введите номер группы ");
+			System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РіСЂСѓРїРїС‹: ");
 			String string = in.nextLine();
 			try {
 				st.setNumberGroup(Integer.valueOf(string));
 
 			} catch (NumberFormatException e) {
-				System.err.println("должно быть число");
+				System.err.println("РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С‡РёСЃР»Рѕ");
 			}
 		} while (st.getId() == 0);
 	}
 
 	public static void menu() {
-		System.out.println("\nВыберите пункт меню: " + "\n[1] - Добавление студентов в группу"
-				+ "\n[2] - Вывод всех студентов" + "\n[3] - Сортировка по фамилии" + "\n[4] - Сотртровка по имени"
-				+ "\n[5] - Призовники" + "\n[6] - Сохранить в файл" + "\n[7] - Считать с файла");
+		System.out.println("\nР’С‹Р±РµСЂРёС‚Рµ РїСѓРЅРєС‚: " + "\n[1] - РґРѕР±Р°РІРёС‚СЊ СЃС‚СѓРґРµРЅС‚Р°"
+				+ "\n[2] - РџСЂРѕСЃРјРѕС‚СЂРµС‚СЊ РІСЃРµС… СЃС‚СѓРґРµРЅС‚РѕРІ" + "\n[3] - СЃРѕСЂС‚РёСЂРѕРІРєР° РїРѕ С„Р°РјРёР»РёРё" + "\n[4] - СЃРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РёРјРµРЅРё"
+				+ "\n[5] - РџСЂРёР·РѕРІРЅРёРєРё" + "\n[6] - РЎРѕС…СЂР°РЅРёС‚СЊ РІ С„Р°Р№Р»" + "\n[7] - РЎС‡РёС‚Р°С‚СЊ СЃ С„Р°Р№Р»Р°");
 	}
 
 }
