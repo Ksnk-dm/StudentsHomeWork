@@ -1,6 +1,8 @@
 package ukrkosenko;
 
-public class Student extends Person {
+import java.io.Serializable;
+
+public class Student extends Person implements Serializable {
 	private int id;
 	private int numberGroup;
 	private String faculty;

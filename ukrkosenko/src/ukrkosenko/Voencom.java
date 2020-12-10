@@ -1,7 +1,10 @@
 package ukrkosenko;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public interface Voencom {
-	public Student[] recrut();
+	public List <Student> recrut();
 
 
 
