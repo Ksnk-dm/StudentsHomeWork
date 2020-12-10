@@ -4,7 +4,7 @@ public class MyException extends Exception {
 
 	@Override
 	public String getMessage(){
-	return " максимально колличество студентов в группе 10";
+	return "РњР°РєСЃРёРјР°Р»СЊРЅРѕ РєРѕР»Р»РёС‡РµСЃС‚РІРѕ СЃС‚СѓРґРµРЅС‚РѕРІ 10";
 	
 	}
 }
